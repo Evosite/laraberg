@@ -1,12 +1,12 @@
 <?php
 
-namespace robchett\Laraberg;
+namespace RobChett\Laraberg;
 
 use Illuminate\Support\ServiceProvider;
-use robchett\Laraberg\Blocks\BlockParser;
-use robchett\Laraberg\Blocks\BlockTypeRegistry;
-use robchett\Laraberg\Blocks\ContentRenderer;
-use robchett\Laraberg\Services\OEmbedService;
+use RobChett\Laraberg\Blocks\BlockParser;
+use RobChett\Laraberg\Blocks\BlockTypeRegistry;
+use RobChett\Laraberg\Blocks\ContentRenderer;
+use RobChett\Laraberg\Services\OEmbedService;
 
 class LarabergServiceProvider extends ServiceProvider
 {

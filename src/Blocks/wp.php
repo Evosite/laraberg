@@ -1,6 +1,6 @@
 <?php
 
-namespace robchett\Laraberg\Blocks;
+namespace RobChett\Laraberg\Blocks;
 /**
  * Block Serialization Parser
  *

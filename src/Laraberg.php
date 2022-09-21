@@ -1,8 +1,8 @@
 <?php
 
-namespace robchett\Laraberg;
+namespace RobChett\Laraberg;
 
-use robchett\Laraberg\Blocks\BlockTypeRegistry;
+use RobChett\Laraberg\Blocks\BlockTypeRegistry;
 
 class Laraberg
 {

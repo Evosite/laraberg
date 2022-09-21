@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use robchett\Laraberg\Laraberg;
+use RobChett\Laraberg\Laraberg;
 
 class AppServiceProvider extends ServiceProvider
 {

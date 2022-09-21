@@ -1,11 +1,11 @@
 <?php
 
-namespace robchett\Laraberg\Services;
+namespace RobChett\Laraberg\Services;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Arr;
-use robchett\Laraberg\Exceptions\OEmbedFetchException;
+use RobChett\Laraberg\Exceptions\OEmbedFetchException;
 
 class OEmbedService
 {

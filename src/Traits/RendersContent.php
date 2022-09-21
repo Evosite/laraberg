@@ -1,8 +1,8 @@
 <?php
 
-namespace robchett\Laraberg\Traits;
+namespace RobChett\Laraberg\Traits;
 
-use robchett\Laraberg\Blocks\ContentRenderer;
+use RobChett\Laraberg\Blocks\ContentRenderer;
 
 use function app;
 

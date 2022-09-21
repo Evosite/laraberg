@@ -1,6 +1,6 @@
 <?php
 
-namespace robchett\Laraberg\Exceptions;
+namespace RobChett\Laraberg\Exceptions;
 
 class OEmbedFetchException extends \Exception
 {

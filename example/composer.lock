@@ -5321,17 +5321,17 @@
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": "robchett\\Laraberg\\LarabergServiceProvider"
+                    "providers": "RobChett\\Laraberg\\LarabergServiceProvider"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "robchett\\Laraberg\\": "src"
+                    "RobChett\\Laraberg\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "robchett\\Laraberg\\Test\\": "tests"
+                    "RobChett\\Laraberg\\Test\\": "tests"
                 }
             },
             "license": [

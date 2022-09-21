@@ -1,9 +1,9 @@
 <?php
 
-namespace robchett\Laraberg\Controllers;
+namespace RobChett\Laraberg\Controllers;
 
 use Illuminate\Http\Request;
-use robchett\Laraberg\Blocks\Block;
+use RobChett\Laraberg\Blocks\Block;
 
 class BlockRendererController
 {
