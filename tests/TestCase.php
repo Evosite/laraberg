@@ -1,9 +1,9 @@
 <?php
 
-namespace VanOns\Laraberg\Test;
+namespace robchett\Laraberg\Test;
 
-use VanOns\Laraberg\LarabergFacade;
-use VanOns\Laraberg\LarabergServiceProvider;
+use robchett\Laraberg\LarabergFacade;
+use robchett\Laraberg\LarabergServiceProvider;
 use Orchestra\Testbench\Testcase as OrchestraTestCase;
 
 class TestCase extends OrchestraTestCase
@@ -11,7 +11,7 @@ class TestCase extends OrchestraTestCase
     /**
      * Load package service provider
      * @param  \Illuminate\Foundation\Application $app
-     * @return VanOns\Laraberg\LarabergServiceProvider
+     * @return robchett\Laraberg\LarabergServiceProvider
      */
     protected function getPackageProviders($app)
     {

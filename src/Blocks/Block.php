@@ -1,8 +1,8 @@
 <?php
 
-namespace VanOns\Laraberg\Blocks;
+namespace robchett\Laraberg\Blocks;
 
-use VanOns\Laraberg\Services\OEmbedService;
+use robchett\Laraberg\Services\OEmbedService;
 
 class Block
 {

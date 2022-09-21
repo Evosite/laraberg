@@ -1,4 +1,4 @@
-import '@van-ons/block-editor/dist/styles.css'
+import '../../public/css/laraberg.css'
 
-export { wordpress, Editor, registerBlockType, removeEditor } from '@van-ons/block-editor'
+export { wordpress, Editor, registerBlockType, removeEditor, unregisterBlockType } from './block-editor'
 export { init } from './init'

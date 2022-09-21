@@ -1,6 +1,6 @@
 <?php
 
-namespace VanOns\Laraberg\Blocks;
+namespace robchett\Laraberg\Blocks;
 
 class BlockTypeRegistry
 {

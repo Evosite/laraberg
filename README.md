@@ -1,6 +1,6 @@
 # <img height="300px" src="./logo-text.svg"> <!-- omit in toc -->
-[![Latest Version](https://img.shields.io/packagist/v/van-ons/laraberg)](https://packagist.org/packages/van-ons/laraberg)
-![License](https://img.shields.io/github/license/VanOns/laraberg.svg)
+[![Latest Version](https://img.shields.io/packagist/r/robchett/laraberg)](https://packagist.org/packages/robchett/laraberg)
+![License](https://img.shields.io/github/license/robchett/laraberg.svg)
 
 Laraberg aims to provide an easy way to integrate the Gutenberg editor with your Laravel projects. It takes the Gutenberg editor and adds all the communication and data it needs function in a Laravel environment.
 
@@ -22,13 +22,13 @@ Laraberg aims to provide an easy way to integrate the Gutenberg editor with your
 Install package using composer:
 
 ```bash
-composer require van-ons/laraberg
+composer require robchett/laraberg
 ```
 
 Add vendor files to your project (CSS, JS & Config):
 
 ```bash
-php artisan vendor:publish --provider="VanOns\Laraberg\LarabergServiceProvider"
+php artisan vendor:publish --provider="robchett\Laraberg\LarabergServiceProvider"
 ```
 
 ## JavaScript and CSS files
@@ -55,7 +55,7 @@ The Gutenberg editor expects React, ReactDOM, Moment and JQuery to be in the env
 
 When updating Laraberg you have to publish the vendor files again by running this command:
 ```bash
-php artisan vendor:publish --provider="VanOns\Laraberg\LarabergServiceProvider" --tag="public" --force
+php artisan vendor:publish --provider="robchett\Laraberg\LarabergServiceProvider" --tag="public" --force
 ```
 
 # Usage
@@ -113,7 +113,7 @@ interface EditorSettings {
 In order to add the editor content to a model Laraberg provides the 'RendersContent' trait.
 
 ```php
-use VanOns\Laraberg\Traits\RendersContent;
+use robchett\Laraberg\Traits\RendersContent;
 
 class MyModel extends Model {
   use RendersContent;
@@ -123,7 +123,7 @@ class MyModel extends Model {
 This adds the `render` method to your model which takes care of rendering the raw editor content. By default the `render` methods renders the content in the `content` column, the column can be changed by changing the `$contentColumn` property on your model to the column that you want to use instead.
 
 ```php
-use VanOns\Laraberg\Traits\RendersContent;
+use robchett\Laraberg\Traits\RendersContent;
 
 class MyModel extends Model {
   use RendersContent;
@@ -191,11 +191,3 @@ Laraberg uses the WordPress Gutenberg packages under the hood, a lot of those pa
 - `Laraberg.wordpress.element`
 - `Laraberg.wordpress.hooks`
 - `Laraberg.wordpress.serverSideRender`
-
-<div align="center">
-	<br><br><br>
-	<a href="https://van-ons.nl">
-	    <img src="https://van-ons.nl/assets/mail/logo-vo-groen-2019-mail.png"/>
-	</a>
-  <br>
-</div>

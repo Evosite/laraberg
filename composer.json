@@ -1,8 +1,12 @@
 {
-    "name": "van-ons/laraberg",
+    "name": "robchett/laraberg",
     "description": "A Gutenberg implementation for Laravel",
     "license": "GPL-3.0-or-later",
     "authors": [
+        {
+            "name": "Rob Chett",
+            "email": "robchett@gmail.com"
+        },
         {
             "name": "Maurice Wijnia",
             "email": "maurice@van-ons.nl"
@@ -17,17 +21,17 @@
     },
     "autoload": {
         "psr-4": {
-            "VanOns\\Laraberg\\": "src"
+            "robchett\\Laraberg\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VanOns\\Laraberg\\Test\\": "tests"
+            "robchett\\Laraberg\\Test\\": "tests"
         }
     },
     "extra": {
         "laravel": {
-            "providers": "VanOns\\Laraberg\\LarabergServiceProvider"
+            "providers": "robchett\\Laraberg\\LarabergServiceProvider"
         }
     }
 

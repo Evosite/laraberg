@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 path="../public/js/laraberg.js"
-cmd="php -d memory_limit=2048M artisan vendor:publish --provider='VanOns\Laraberg\LarabergServiceProvider' --tag='public' --force"
+cmd="php -d memory_limit=2048M artisan vendor:publish --provider='robchett\Laraberg\LarabergServiceProvider' --tag='public' --force"
 
 eval $cmd
 echo "Watching $path for changes..."

@@ -1,4 +1,4 @@
-import { APIFetchOptions } from "@van-ons/block-editor/dist/interfaces/fetch-handler"
+import { APIFetchOptions } from "../../block-editor/interfaces/fetch-handler"
 import Route from "./route"
 
 class Router {
