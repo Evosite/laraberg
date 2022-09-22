@@ -27,7 +27,7 @@ composer require robchett/laraberg
 Add vendor files to your project (CSS, JS & Config):
 
 ```bash
-php artisan vendor:publish --provider="RobChett\Laraberg\LarabergServiceProvider" --tags="assets"
+php artisan vendor:publish --tags="laraberg-assets"
 ```
 
 ## JavaScript and CSS files
@@ -39,21 +39,11 @@ The package provides a JS and CSS file that should be present on the page you wa
 <script src="{{ asset('vendor/laraberg/js/laraberg.min.js', '/vendor/laraberg') }}"></script>
 ```
 
-## Dependencies
-
-The Gutenberg editor expects React, ReactDOM, Moment and JQuery to be in the environment it runs in. An easy way to do this would be to add the following lines to your page:
-
-```html
-<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
-
-<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-```
-
 # Updating
 
 When updating Laraberg you have to publish the vendor files again by running this command:
 ```bash
-php artisan vendor:publish --provider="robchett\Laraberg\LarabergServiceProvider" --tag="public" --force
+php artisan vendor:publish --tags="laraberg-assets" --force
 ```
 
 # Usage
@@ -62,19 +52,9 @@ php artisan vendor:publish --provider="robchett\Laraberg\LarabergServiceProvider
 
 The Gutenberg editor should replace an existing textarea in a form. On submit the raw content from the editor will be put in the 'value' attribute of this textarea.
 
-```html
-<textarea id="[id_here]" name="[name_here]" hidden></textarea>
-```
-
-In order to edit content on an already existing model we have to set the value of the textarea to the raw content that the Gutenberg editor provided.
-
-```html
-<textarea id="[id_here]" name="[name_here]" hidden>{{ $model->content }}</textarea>
-```
-
 To initialize the editor all we have to do is call the initialize function with the id of the textarea. You probably want to do this insde a DOMContentLoaded event.
 
-And that's it! The editor will replace the textarea in the DOM and on a form submit the editor content will be available in the textarea's value attribute.
+And that's it! The editor will replace the textarea in the DOM and update the value on change
 
 ```js
 Laraberg.init('[id_here]')
@@ -104,36 +84,6 @@ interface EditorSettings {
     gradients?: Gradient[];
     fontSizes?: FontSize[];
 }
-```
-
-## Models
-
-In order to add the editor content to a model Laraberg provides the 'RendersContent' trait.
-
-```php
-use robchett\Laraberg\Traits\RendersContent;
-
-class MyModel extends Model {
-  use RendersContent;
-}
-```
-
-This adds the `render` method to your model which takes care of rendering the raw editor content. By default the `render` methods renders the content in the `content` column, the column can be changed by changing the `$contentColumn` property on your model to the column that you want to use instead.
-
-```php
-use robchett\Laraberg\Traits\RendersContent;
-
-class MyModel extends Model {
-  use RendersContent;
-
-  protected $contentColumn = 'my_column';
-}
-```
-
-Or by passing the column name to the render method.
-
-```php
-$model->render('my_column');
 ```
 
 ## Custom Blocks

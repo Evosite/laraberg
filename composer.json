@@ -13,20 +13,12 @@
         }
     ],
     "require": {
-        "embed/embed": "^3.3"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^3.7",
-        "phpunit/phpunit": "^7.0"
+        "embed/embed": "^3.3",
+        "spatie/laravel-package-tools": "^1.9.2"
     },
     "autoload": {
         "psr-4": {
             "RobChett\\Laraberg\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "RobChett\\Laraberg\\Test\\": "tests"
         }
     },
     "extra": {
