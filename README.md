@@ -35,8 +35,8 @@ php artisan vendor:publish --tags="laraberg-assets"
 The package provides a JS and CSS file that should be present on the page you want to use the editor on: 
 
 ```html
-<link rel="stylesheet" href="{{mix('vendor/laraberg/css/laraberg.css', '/vendor/laraberg')}}">
-<script src="{{ asset('vendor/laraberg/js/laraberg.min.js', '/vendor/laraberg') }}"></script>
+<link rel="stylesheet" href="{{ mix('/css/laraberg.css', '/vendor/laraberg') }}">
+<script src="{{ mix('/js/laraberg.min.js', '/vendor/laraberg') }}"></script>
 ```
 
 # Updating
