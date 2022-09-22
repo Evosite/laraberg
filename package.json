@@ -10,7 +10,7 @@
     "dev": "webpack --config webpack/webpack.dev.js",
     "watch": "npm run dev -- --watch",
     "start": "npm run watch",
-    "build": "npm run build:sass && npm run build:ts",
+    "build": "npm run build:sass && npm run dev && npm run build:ts",
     "build:ts": "webpack --config webpack/webpack.prod.js",
     "build:sass": "sass resources/scss/laraberg.scss public/css/laraberg.css"
   },

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "public",
+    "outDir": "./resources/.build",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "sourceMap": true,
     "declaration": true,
