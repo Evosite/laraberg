@@ -8,7 +8,7 @@ return [
     */
 
     'use_package_routes' => true,
-    'middlewares' => ['web', 'auth'],
+    'middlewares' => ['web', 'cms.auth'],
     'prefix' => 'laraberg',
 
     /*
