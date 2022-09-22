@@ -1,5 +1,4 @@
-# <img height="300px" src="./logo-text.svg"> <!-- omit in toc -->
-[![Latest Version](https://img.shields.io/packagist/r/robchett/laraberg)](https://packagist.org/packages/robchett/laraberg)
+[![Latest Version](https://img.shields.io/packagist/v/robchett/laraberg)](https://packagist.org/packages/robchett/laraberg)
 ![License](https://img.shields.io/github/license/robchett/laraberg.svg)
 
 Laraberg aims to provide an easy way to integrate the Gutenberg editor with your Laravel projects. It takes the Gutenberg editor and adds all the communication and data it needs function in a Laravel environment.
@@ -28,7 +27,7 @@ composer require robchett/laraberg
 Add vendor files to your project (CSS, JS & Config):
 
 ```bash
-php artisan vendor:publish --provider="robchett\Laraberg\LarabergServiceProvider"
+php artisan vendor:publish --provider="RobChett\Laraberg\LarabergServiceProvider" --tags="assets"
 ```
 
 ## JavaScript and CSS files
@@ -36,9 +35,8 @@ php artisan vendor:publish --provider="robchett\Laraberg\LarabergServiceProvider
 The package provides a JS and CSS file that should be present on the page you want to use the editor on: 
 
 ```html
-<link rel="stylesheet" href="{{asset('vendor/laraberg/css/laraberg.css')}}">
-
-<script src="{{ asset('vendor/laraberg/js/laraberg.js') }}"></script>
+<link rel="stylesheet" href="{{mix('vendor/laraberg/css/laraberg.css', '/vendor/laraberg')}}">
+<script src="{{ asset('vendor/laraberg/js/laraberg.min.js', '/vendor/laraberg') }}"></script>
 ```
 
 ## Dependencies

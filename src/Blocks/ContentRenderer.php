@@ -4,14 +4,9 @@ namespace RobChett\Laraberg\Blocks;
 
 class ContentRenderer
 {
-    /**
-     * @var BlockParser
-     */
-    private $parser;
 
-    public function __construct(BlockParser $parser)
+    public function __construct(private BlockParser $parser)
     {
-        $this->parser = $parser;
     }
 
     public function render(string $content): string

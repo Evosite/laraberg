@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "outDir": "./resources/.build",
+    "outDir": "resources/dist/js",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "sourceMap": true,
-    "declaration": true,
     "strict": true,
     "noImplicitReturns": true,
     "noImplicitAny": false,

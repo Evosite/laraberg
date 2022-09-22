@@ -7,12 +7,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config webpack/webpack.dev.js",
-    "watch": "npm run dev -- --watch",
-    "start": "npm run watch",
-    "build": "npm run build:sass && npm run dev && npm run build:ts",
-    "build:ts": "webpack --config webpack/webpack.prod.js",
-    "build:sass": "sass resources/scss/laraberg.scss public/css/laraberg.css"
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,12 @@
   },
   "homepage": "https://github.com/robchett/laraberg#readme",
   "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.1.4",
+    "laravel-mix": "^6.0.49",
     "mini-css-extract-plugin": "^2.4.5",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "ts-loader": "^9.2.6",

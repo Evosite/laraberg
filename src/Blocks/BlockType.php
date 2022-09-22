@@ -4,20 +4,14 @@ namespace RobChett\Laraberg\Blocks;
 
 class BlockType
 {
-    /** @var string */
-    public $name;
-
-    /** @var array */
-    public $attributes;
-
-    /** @var callable */
+    /** @var ?callable */
     public $renderCallback;
 
-    public function __construct(string $name, array $attributes = [], callable $renderCallback = null)
-    {
-        $this->name = $name;
-        $this->attributes = $attributes;
-        $this->renderCallback = $renderCallback;
+    public function __construct(
+        public string $name,
+        public array $attributes = [],
+        ?callable $renderCallback = null
+    ) {
     }
 
     public function isDynamic(): bool

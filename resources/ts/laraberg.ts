@@ -1,4 +1,4 @@
-import '../../public/css/laraberg.css'
+import '../dist/css/laraberg.css'
 
 /**
  * WordPress dependencies
