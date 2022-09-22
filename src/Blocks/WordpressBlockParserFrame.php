@@ -28,12 +28,12 @@ class WordpressBlockParserFrame
      * Byte offset into document for after parse token ends
      * (used during reconstruction of stack into parse production)
      */
-    public int $prev_offset;
+    public ?int $prev_offset;
 
     /**
      * Byte offset into document where leading HTML before token starts
      */
-    public int $leading_html_start;
+    public ?int $leading_html_start;
 
     /**
      * @param  WordpressBlockParserBlock  $block  Full or partial block.
