@@ -12,5 +12,9 @@ import '../dist/css/laraberg.css'
      () => MediaUpload
  );
 
-export { wordpress, Editor, registerBlockType, removeEditor, unregisterBlockType } from './block-editor'
-export { init } from './init'
+import { wordpress, Editor, registerBlockType, removeEditor, unregisterBlockType } from './block-editor'
+import { init } from './init'
+
+window['Laraberg'] = {
+ wordpress, Editor, registerBlockType, removeEditor, unregisterBlockType, init
+}

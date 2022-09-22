@@ -8,9 +8,3 @@ mix
     .version()
     .sourceMaps()
     .react()
-
-    .webpackConfig({
-        resolve: {
-            preferRelative: true,
-        },
-    })
