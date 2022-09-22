@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = merge(common, {
     mode: 'development',
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
     output: {
         filename: 'js/laraberg.js',
         path: path.resolve(__dirname, '../public'),
