@@ -12,6 +12,7 @@ class BlockType
         public array $attributes = [],
         ?callable $renderCallback = null
     ) {
+        $this->renderCallback = $renderCallback;
     }
 
     public function isDynamic(): bool
