@@ -1,10 +1,10 @@
 <?php
 
-namespace RobChett\Laraberg\Controllers;
+namespace Evosite\Laraberg\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use RobChett\Laraberg\Services\OEmbedService;
+use Evosite\Laraberg\Services\OEmbedService;
 
 class OEmbedController extends Controller
 {

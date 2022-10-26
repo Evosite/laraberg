@@ -1,8 +1,8 @@
 <?php
 
-namespace RobChett\Laraberg\Blocks;
+namespace Evosite\Laraberg\Blocks;
 
-use RobChett\Laraberg\Services\OEmbedService;
+use Evosite\Laraberg\Services\OEmbedService;
 
 class Block
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace RobChett\Laraberg\Controllers;
+namespace Evosite\Laraberg\Controllers;
 
 use Illuminate\Http\Request;
-use RobChett\Laraberg\Blocks\Block;
+use Evosite\Laraberg\Blocks\Block;
 
 class BlockRendererController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace RobChett\Laraberg\Blocks;
+namespace Evosite\Laraberg\Blocks;
 
 class BlockType
 {

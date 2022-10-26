@@ -1,5 +1,5 @@
 {
-    "name": "robchett/laraberg",
+    "name": "evosite/laraberg",
     "description": "A Gutenberg implementation for Laravel",
     "license": "GPL-3.0-or-later",
     "authors": [
@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RobChett\\Laraberg\\": "src"
+            "Evosite\\Laraberg\\": "src"
         }
     },
     "extra": {
         "laravel": {
-            "providers": "RobChett\\Laraberg\\LarabergServiceProvider"
+            "providers": "Evosite\\Laraberg\\LarabergServiceProvider"
         }
     }
 

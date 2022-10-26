@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robchett/laraberg.git"
+    "url": "git+https://github.com/evosite/laraberg.git"
   },
   "author": "Maurice Wijnia",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/robchett/laraberg/issues"
+    "url": "https://github.com/evosite/laraberg/issues"
   },
-  "homepage": "https://github.com/robchett/laraberg#readme",
+  "homepage": "https://github.com/evosite/laraberg#readme",
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
     "css-loader": "^6.5.1",

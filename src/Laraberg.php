@@ -1,8 +1,8 @@
 <?php
 
-namespace RobChett\Laraberg;
+namespace Evosite\Laraberg;
 
-use RobChett\Laraberg\Blocks\BlockTypeRegistry;
+use Evosite\Laraberg\Blocks\BlockTypeRegistry;
 
 class Laraberg
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace RobChett\Laraberg\Blocks;
+namespace Evosite\Laraberg\Blocks;
 
 /**
  * Parses a document and constructs a list of parsed block objects

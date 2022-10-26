@@ -1,5 +1,5 @@
-[![Latest Version](https://img.shields.io/packagist/v/robchett/laraberg)](https://packagist.org/packages/robchett/laraberg)
-![License](https://img.shields.io/github/license/robchett/laraberg.svg)
+[![Latest Version](https://img.shields.io/packagist/v/evosite/laraberg)](https://packagist.org/packages/robchett/laraberg)
+![License](https://img.shields.io/github/license/evosite/laraberg.svg)
 
 Laraberg aims to provide an easy way to integrate the Gutenberg editor with your Laravel projects. It takes the Gutenberg editor and adds all the communication and data it needs function in a Laravel environment.
 
@@ -21,7 +21,7 @@ Laraberg aims to provide an easy way to integrate the Gutenberg editor with your
 Install package using composer:
 
 ```bash
-composer require robchett/laraberg
+composer require evosite/laraberg
 ```
 
 Add vendor files to your project (CSS, JS & Config):
